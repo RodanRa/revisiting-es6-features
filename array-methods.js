@@ -18,3 +18,14 @@ myArr.forEach((element) => {
   newCubeArray.push(element * element * element);
 });
 console.log(`newCubeArray: ${newCubeArray}`);
+
+const myArrToString = myArr.toString();
+console.log(`myArrToString: ${myArrToString}`);
+
+const fruits = ["Banana", "Orange", "Apple", "Mango", "Kiwi"];
+// slice returns selection of array start and end position given as args end is actually end-1 pos
+console.log(fruits.slice(1, 3));
+console.log(fruits);
+/* Removing 2 elements from index 2 */
+console.log(`removed:${fruits.splice(2, 2)}`);
+console.log(`new fruits: ${fruits}`);
